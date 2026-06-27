@@ -7,3 +7,5 @@ const productSchema = new mongoose.Schema({
     category: String,
     image: String,
 });
+
+export default mongoose.models.Product || mongoose.model("Product", productSchema);
